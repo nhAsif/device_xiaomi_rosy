@@ -16,6 +16,11 @@
 
 DEVICE_PATH := device/xiaomi/rosy
 
+
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
