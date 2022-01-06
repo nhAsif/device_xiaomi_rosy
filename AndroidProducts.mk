@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_rosy.mk
+    $(LOCAL_DIR)/cherish_rosy.mk
