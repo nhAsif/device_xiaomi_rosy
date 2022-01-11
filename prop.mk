@@ -137,7 +137,7 @@ sdm.debug.rotator_disable_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=0 \
 debug.sf.hw=0 \
-debug.sf.latch_unsignaled=1 \
+debug.sf.latch_unsignaled=0 \
 debug.sf.recomputecrop=0 \
 debug.sf.disable_backpressure=1 \
 dev.pm.dyn_samplingrate=1 \
@@ -217,6 +217,15 @@ ro.vendor.qti.sys.fw.bservice_enable=true \
 ro.vendor.qti.sys.fw.bservice_age=5000 \
 ro.vendor.qti.sys.fw.bservice_limit=5 \
 ro.vendor.qti.am.reschedule_service=true
+
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.heapstartsize=16m \
+dalvik.vm.heapgrowthlimit=192m \
+dalvik.vm.heapsize=512m \
+dalvik.vm.heaptargetutilization=0.75 \
+dalvik.vm.heapminfree=4m \
+dalvik.vm.heapmaxfree=8m
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
