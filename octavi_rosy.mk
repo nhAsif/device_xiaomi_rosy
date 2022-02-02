@@ -34,7 +34,5 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # GApps
 TARGET_GAPPS_ARCH := arm64
 
-# Build Status
-OCTAVI_BUILD_TYPE := Official
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
