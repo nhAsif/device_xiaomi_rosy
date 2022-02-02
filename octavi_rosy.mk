@@ -35,4 +35,9 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
 USE_PIXEL_CHARGING := true
+
+
+# Lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
