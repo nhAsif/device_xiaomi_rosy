@@ -39,6 +39,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Custom stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGER := true
-
-# Lawnchair
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
