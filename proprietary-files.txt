@@ -1350,6 +1350,10 @@ vendor/lib/libvqzip.so|f85628ea634df1c31d69380d960ad7ea3396e7b2
 vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 vendor/lib64/libvpplibrary.so|0308510be8b2ea4cb8ba7278ad249eea53f3fb2c
 
+#Perf
+vendor/lib64/libqti-perfd-client.so|660d1d2a58e10616971c807b638f95b139b5a8e0
+vendor/lib/libqti-perfd-client.so|59515ed57886d7c37c98c7da6314f21ff6694474
+
 # Peripheral - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/bin/pm-proxy|4d9a24cf5d90f2f320fb838a190fcef9e070ef57
 vendor/bin/pm-service|212168358c65533c434e54be7b6fed0fd02a099c
