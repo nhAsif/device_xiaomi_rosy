@@ -38,6 +38,9 @@ QCOM_SOONG_NAMESPACE := \
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+USE_DEX2OAT_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Do not generate libartd. (on userdebug/eng as well)
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
