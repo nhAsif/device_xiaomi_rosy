@@ -390,6 +390,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbinder_gdxfp \
     libcamshim
+    
+# Speed up
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
 
 # Tethering
 PRODUCT_PACKAGES += \
