@@ -39,6 +39,8 @@ PRODUCT_SOONG_NAMESPACES += \
 QCOM_SOONG_NAMESPACE := \
     $(LOCAL_PATH)/qcom-caf
 
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)/qcom-caf
+
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
