@@ -36,8 +36,10 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-QCOM_SOONG_NAMESPACE := \
-    $(LOCAL_PATH)/qcom-caf
+
+#Soong
+PRODUCT_BOARD_PLATFORM := msm8996
+PRODUCT_USES_QCOM_HARDWARE := true
 
 
 # Speed profile services and wifi-service to reduce RAM and storage.
@@ -229,7 +231,12 @@ PRODUCT_PACKAGES += \
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-    
+ 
+ # QCOM variant
+    TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+    TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+    TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
+ 
 #HALS
     SRC_MEDIA_HAL_DIR := $(DEVICE_PATH)/qcom-caf/media
     SRC_DISPLAY_HAL_DIR := $(DEVICE_PATH)/qcom-caf/display
