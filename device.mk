@@ -39,7 +39,6 @@ PRODUCT_SOONG_NAMESPACES += \
 QCOM_SOONG_NAMESPACE := \
     $(LOCAL_PATH)/qcom-caf
 
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)/qcom-caf
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
@@ -230,6 +229,14 @@ PRODUCT_PACKAGES += \
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+    
+#HALS
+    SRC_MEDIA_HAL_DIR := $(DEVICE_PATH)/qcom-caf/media
+    SRC_DISPLAY_HAL_DIR := $(DEVICE_PATH)/qcom-caf/display
+    SRC_AUDIO_HAL_DIR := $(DEVICE_PATH)/qcom-caf/audio
+    PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)/qcom-caf/display
+    PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)/qcom-caf/audio
+    PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)/qcom-caf/media
 
 # IMS
 PRODUCT_PACKAGES += \
