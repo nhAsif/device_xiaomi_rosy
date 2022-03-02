@@ -37,11 +37,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
-#Soong
-PRODUCT_BOARD_PLATFORM := msm8996
-PRODUCT_USES_QCOM_HARDWARE := true
-
-
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
@@ -232,18 +227,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
  
- # QCOM variant
-    TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
-    TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
-    TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
  
 #HALS
-    SRC_MEDIA_HAL_DIR := $(DEVICE_PATH)/qcom-caf/media
-    SRC_DISPLAY_HAL_DIR := $(DEVICE_PATH)/qcom-caf/display
-    SRC_AUDIO_HAL_DIR := $(DEVICE_PATH)/qcom-caf/audio
-    PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)/qcom-caf/display
-    PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)/qcom-caf/audio
-    PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)/qcom-caf/media
+    SRC_MEDIA_HAL_DIR := device/xiaomi/rosy/qcom-caf/media
+    SRC_DISPLAY_HAL_DIR := device/xiaomi/rosy/qcom-caf/display
+    SRC_AUDIO_HAL_DIR := device/xiaomi/rosy/qcom-caf/audio
+    PRODUCT_SOONG_NAMESPACES += device/xiaomi/rosy/qcom-caf/display
+    PRODUCT_SOONG_NAMESPACES += device/xiaomi/rosy/qcom-caf/audio
+    PRODUCT_SOONG_NAMESPACES += device/xiaomi/rosy/qcom-caf/media
 
 # IMS
 PRODUCT_PACKAGES += \
